@@ -1,5 +1,5 @@
-0ba8a7f557533a6240372923b4aa6603 *ChangeLog
-6d2dbbfd6f45bdac23432ba10b3b9443 *DESCRIPTION
+d78266d627cdf0c6a6986ddc0b4f1f04 *ChangeLog
+9ca8aadd681bf9f2b3195a293d086141 *DESCRIPTION
 8569dc5b2eaf35080b7ca6388ccebf37 *NAMESPACE
 b08783cd8ffbd46aa371b68d9c386dae *R/bspfGaussianOptimal.R
 5836d4c1e7102bba3514b227703db9c0 *R/pfLineartBS.R
@@ -18,7 +18,7 @@ f03c03a98d6efbcbe913130a128ec66d *inst/include/particle.h
 9d9ca212c86c060ec7fe2b65acac4ee0 *inst/include/pflineart.h
 aa650bf17e827d567dccc299c77c1c1e *inst/include/pfnonlinbs.h
 94ecdcc938cec1690f292d01fdb3c699 *inst/include/rngR.h
-913a87ff0c1b6cee9d17b5b172bc80e2 *inst/include/sampler.h
+84310d8c0bef304b16c60256960d62fc *inst/include/sampler.h
 2a126697a4467cb552dbb3f17a052e6d *inst/include/smc-exception.h
 e38a9a993b797f2c7df6bc97c90a6a5f *inst/include/smctc.h
 e8ff088e3101053bf796185befa503c4 *inst/sampleData/pf-data.csv
