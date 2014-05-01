@@ -2,6 +2,12 @@
 \title{News for Package 'RcppSMC}
 \newcommand{\cpkg}{\href{http://CRAN.R-project.org/package=#1}{\pkg{#1}}}
 
+\section{Changes in RcppSMC version 0.1.3 (2014-05-01)}{
+  \itemize{
+    \item Bugfix in \code{Sampler.iterate()} for memory overrun detected by valgrind
+  }
+}
+
 \section{Changes in RcppSMC version 0.1.2 (2014-02-06)}{
   \itemize{
     \item Updated for \cpkg{Rcpp} 0.11.0 with explicit \code{importFrom}
@@ -11,6 +17,7 @@
     \item Addded GitHub / Travis CI support
     \item Use more portable \code{dev.new()} rather than \code{x11()} in \code{pfLinearBS.R}
     \item Applied some corrections to \code{pfNonlinBS.R} example
+    \item Converted \code{NEWS} to \code{NEWS.Rd}
   }
 }
 

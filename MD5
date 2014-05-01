@@ -1,5 +1,5 @@
-a54c0c7fe0a9d55580355314b0b2e678 *ChangeLog
-aab2d37b709e7b60f45078df1e339a74 *DESCRIPTION
+12c2f3d234d2bf04faebc2cd15275152 *ChangeLog
+3da916d47751b6f9d96beb65aa65d476 *DESCRIPTION
 cbed7c331ca213da6ddd80c055bf9c83 *NAMESPACE
 b08783cd8ffbd46aa371b68d9c386dae *R/bspfGaussianOptimal.R
 2b893b1e40e4e1ee85ae7db45746b60e *R/pfLineartBS.R
@@ -9,8 +9,8 @@ aa488e2749f9726fe25b6419c8e1d894 *R/pfNonlinBS.R
 00e0969b25e9783acb47341e02d2df99 *R/simNonlin.R
 5530daa9b0ac98590284674b77a99d24 *README.md
 4676a92704b1562a4d8f3fa4b854ea29 *TODO
-f604bc7ad6680cbc08b69e5a7e0b8496 *cleanup
-ab2dedc64e1c943335eb7df366fc2160 *inst/NEWS.Rd
+20b0e1e3c02dbe8dce049d2e4ef46b33 *cleanup
+663908fbd4a1c69922abaa7d630987af *inst/NEWS.Rd
 1bf2e25ca70e29c33f9bfd39ee89b898 *inst/announce/RcppSMC-0.1.0.txt
 cbab3eb9f0ad0ff240aef5578f1c4b47 *inst/include/blockpfgaussianopt.h
 6a6534803258eff352147607746b4850 *inst/include/history.h
@@ -31,6 +31,6 @@ a4ad0f89a29cd8ff20dfff9a1e3e7872 *man/pfLineartBS.Rd
 245b66d71bb72c7c2d6429e6fca1e085 *src/compareGSLtoR/multinom.r
 976d67f0781531e0b581de55a0ac4ff1 *src/compareGSLtoR/ugauss.r
 9c38642b2c77939b590c75a1d9dd9cd5 *src/history.cpp
-636944d6429b7e85dfee50d37cc1b113 *src/pflineart.cpp
+58609820d60c66273895511150bfb7b7 *src/pflineart.cpp
 6e91640f59218daec8e437f67ae96253 *src/pfnonlinbs.cpp
 2ad6f16a4c28c39db006f45c02c3e684 *src/smc-exception.cpp
