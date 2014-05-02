@@ -1,5 +1,5 @@
-12c2f3d234d2bf04faebc2cd15275152 *ChangeLog
-3da916d47751b6f9d96beb65aa65d476 *DESCRIPTION
+d3b4ae9288bcecee261227dc7b0156e5 *ChangeLog
+c06190578031619943eeea87d8522c54 *DESCRIPTION
 cbed7c331ca213da6ddd80c055bf9c83 *NAMESPACE
 b08783cd8ffbd46aa371b68d9c386dae *R/bspfGaussianOptimal.R
 2b893b1e40e4e1ee85ae7db45746b60e *R/pfLineartBS.R
@@ -10,7 +10,7 @@ aa488e2749f9726fe25b6419c8e1d894 *R/pfNonlinBS.R
 5530daa9b0ac98590284674b77a99d24 *README.md
 4676a92704b1562a4d8f3fa4b854ea29 *TODO
 20b0e1e3c02dbe8dce049d2e4ef46b33 *cleanup
-663908fbd4a1c69922abaa7d630987af *inst/NEWS.Rd
+a20173c534dca9ed80a6ac9a0cf0eb72 *inst/NEWS.Rd
 1bf2e25ca70e29c33f9bfd39ee89b898 *inst/announce/RcppSMC-0.1.0.txt
 cbab3eb9f0ad0ff240aef5578f1c4b47 *inst/include/blockpfgaussianopt.h
 6a6534803258eff352147607746b4850 *inst/include/history.h
@@ -19,7 +19,7 @@ f03c03a98d6efbcbe913130a128ec66d *inst/include/particle.h
 9d9ca212c86c060ec7fe2b65acac4ee0 *inst/include/pflineart.h
 aa650bf17e827d567dccc299c77c1c1e *inst/include/pfnonlinbs.h
 94ecdcc938cec1690f292d01fdb3c699 *inst/include/rngR.h
-84310d8c0bef304b16c60256960d62fc *inst/include/sampler.h
+8754b3a99d250c76710d35d151a5d3de *inst/include/sampler.h
 2a126697a4467cb552dbb3f17a052e6d *inst/include/smc-exception.h
 e38a9a993b797f2c7df6bc97c90a6a5f *inst/include/smctc.h
 e8ff088e3101053bf796185befa503c4 *inst/sampleData/pf-data.csv
