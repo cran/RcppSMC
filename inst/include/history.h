@@ -4,6 +4,7 @@
 //
 // Copyright (C) 2008 - 2009  Adam Johansen
 // Copyright (C) 2017         Adam Johansen, Dirk Eddelbuettel and Leah South
+// Copyright (C) 2021         Adam Johansen, Dirk Eddelbuettel, Leah South and Ilya Zarubin
 //
 // This file is part of RcppSMC.
 //
@@ -14,12 +15,11 @@
 //
 // RcppSMC is distributed in the hope that it will be useful, but
 // WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with RcppSMC.  If not, see <http://www.gnu.org/licenses/>.
-//
+// along with RcppSMC. If not, see <http://www.gnu.org/licenses/>.
 
 //! \file
 //! \brief Classes and function related to the history of the sampler.
@@ -67,6 +67,7 @@ namespace smc {
         int nAccepted; //!< Number of MCMC moves accepted during this iteration.
         int nRepeat; //!< Number of MCMC iterations performed at this iteration (per particle)
         population<Space> pop; //!< The particles themselves (values and weights)
+        arma::Col<unsigned int> ancestorIndices = arma::Col<unsigned int>(number);
         historyflags flags; //!< Flags associated with this iteration.
 
     public:
@@ -88,13 +89,24 @@ namespace smc {
         population<Space> GetValues(void) const { return pop; }
         /// Returns a reference to the current particle set.
         population<Space> & GetRefs(void) { return pop; }
+        /// Sets the ancestor indices of the current particle set.
+        void SetAIndices(const arma::Col<unsigned int> & newAindices) {
+            ancestorIndices = newAindices;
+        }
+        /// Returns the ancestor indices of the current particle set.
+        arma::Col<unsigned int> GetAIndices(void) const {return ancestorIndices;}
         /// Monte Carlo estimate of the expectation of the supplied function with respect to the empirical measure of the particle ensemble.
         long double Integrate(long lTime, double (*pIntegrand)(long,const Space&,void*), void* pAuxiliary) const;
         /// Monte Carlo estimate of the variance of the supplied function with respect to the empirical measure of the particle ensemble (to be used in second order trapezoidal correction).
         long double Integrate_Var(long lTime, double (*pIntegrand)(long,const Space&,void*), double Expectation, void* pAuxiliary) const;
-        /// Sets the particle set to the specified values.
+        /// Sets the particle set to the specified values excluding ancestors.
         void Set(long lNumber, const population<Space> &New, int inAccepted, int nRepeats, const historyflags &histflags){number = lNumber; pop = New; nAccepted = inAccepted; nRepeat = nRepeats; flags = histflags;};
-
+        /// Sets the particle set to the specified values including ancestors.
+        void Set(long lNumber, const population<Space> &New, int inAccepted, int nRepeats, const historyflags &histflags, const arma::Col<unsigned int> & newAindices){number = lNumber; pop = New; nAccepted = inAccepted; nRepeat = nRepeats; flags = histflags; ancestorIndices = newAindices;};
+        /// Sets the particle set to the specified values including ancestors specifically to use with the derived conditional sampler class where adaptation and MCMC moves are not supported.
+        void Set(long lNumber, const population<Space> &New, const historyflags &histflags, const arma::Col<unsigned int> & newAindices){number = lNumber; pop = New; flags = histflags; ancestorIndices = newAindices;};
+        /// Sets the particle set to the specified values excluding ancestors for the derived conditional sampler class.
+        void Set(long lNumber, const population<Space> &New, const historyflags &histflags){number = lNumber; pop = New; flags = histflags;};
         /// Returns the number of MCMC moves accepted during this iteration.
         int AcceptCount(void) {return nAccepted; }
         /// Returns the number of MCMC iterations performed during this iteration.

@@ -1,11 +1,12 @@
 // -*- mode: C++; c-indent-level: 4; c-basic-offset: 4; indent-tabs-mode: nil; -*-
 //
 // population.h: Rcpp integration of SMC library -- storing and manipulating
-// particles 
+// particles
 //
 // Copyright (C) 2008 - 2009  Adam Johansen
-// Copyright (C) 2017         Adam Johansen, Dirk Eddelbuettel and Leah South
-// 
+// Copyright (C) 2017 - 2020  Adam Johansen, Dirk Eddelbuettel and Leah South
+// Copyright (C) 2021         Adam Johansen, Dirk Eddelbuettel, Leah South and Ilya Zarubin
+//
 // This file is part of RcppSMC.
 //
 // RcppSMC is free software: you can redistribute it and/or modify it
@@ -15,12 +16,11 @@
 //
 // RcppSMC is distributed in the hope that it will be useful, but
 // WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with RcppSMC.  If not, see <http://www.gnu.org/licenses/>.
-//
+// along with RcppSMC. If not, see <http://www.gnu.org/licenses/>.
 
 //! \file
 //! \brief Class used to store and manipulate the population of particles.
@@ -48,7 +48,7 @@ namespace smc {
         double sum = arma::sum(exp(logw - dMaxWeight));
         return (dMaxWeight + log(sum));
     }
-    
+
     /// A template class for the particles of an SMC algorithm
     template <class Space> class population
     {
@@ -87,10 +87,10 @@ namespace smc {
         arma::vec GetWeight(void) const {return exp(logweight);}
         /// Returns the nth particle's unnormalised weight.
         double GetWeightN(long n) const {return exp(logweight(n));}
-        
+
         /// \brief Sets the particle values and weights explicitly
         ///
-        /// \param sValue The particle values to use 
+        /// \param sValue The particle values to use
         /// \param dLogWeight The natural logarithm of the new particle weights
         void Set(const std::vector<Space> & sValue,const arma::vec & dLogWeight){value = sValue; logweight = dLogWeight;}
         /// \brief Sets the particle values explicitly
@@ -103,8 +103,12 @@ namespace smc {
         void SetValueN(const Space & sValue, long n){value[n] = sValue;}
         /// \brief Sets the particle log weights explicitly
         ///
-        /// \param dLogWeight The natural logarithm of the new particle weights
+        /// \param dLogWeight The natural logarithm of the new particle weights to use
         void SetLogWeight(const arma::vec & dLogWeight) {logweight = dLogWeight;}
+        /// \brief Sets the nth particle log weight explicitly
+        ///
+        /// \param dLogWeight The natural logarithm of the new particle weight to use
+        void SetLogWeightN(const double & dLogWeight, long n) {logweight(n) = dLogWeight;}
     };
 
 
@@ -122,7 +126,7 @@ namespace smc {
         logweight = pFrom.logweight;
     }
 
-    /// Create particles with values sInit and log weights dLogWeight 
+    /// Create particles with values sInit and log weights dLogWeight
     /// \param sInit The initial values of the particle
     /// \param dLogWeight The initial values of the natural logarithm of the particle weights
     template <class Space>
