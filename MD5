@@ -1,5 +1,5 @@
-0fbd723813d8076f95b8b56eb929361a *ChangeLog
-fa7c62b50fb66cb0f1cd1f3e9213b6b9 *DESCRIPTION
+93770480e26265be04fbecb76ffc1b1f *ChangeLog
+3581132889764034d09b5543fccd749d *DESCRIPTION
 76b6cbccb5dc34a4433f3c651c1d1059 *NAMESPACE
 39c4646ee6f84bc72cf36426ce9d8294 *R/LinReg.R
 c5295fe59ef28d7213c63627322defbb *R/LinRegLA.R
@@ -13,11 +13,11 @@ c5295fe59ef28d7213c63627322defbb *R/LinRegLA.R
 0c94cf8638a8975995333729f7f55d49 *R/simGaussian.R
 2fd6cf67ebc0a703b3b057f5ec4a03a6 *R/simLineart.R
 72032e6a6536d9497b6c1b54094d91f6 *R/simNonlin.R
-0d97895c7c79c8066cf5d7129fb68701 *README.md
+74d153496b278d3ba95fb8c7b57d7245 *README.md
 7747194046c887b027e0cb501c82577a *TODO
 20b0e1e3c02dbe8dce049d2e4ef46b33 *cleanup
 94a4fe3ea50339195c197329ad1825d9 *data/radiata.rda
-e66b42882a5b8bbebe4215bb6b85afcc *inst/NEWS.Rd
+216050a49aa92af24de1472b01226da8 *inst/NEWS.Rd
 1bf2e25ca70e29c33f9bfd39ee89b898 *inst/announce/RcppSMC-0.1.0.txt
 b0fe3ce0fb3d4623fe8b8db306f10850 *inst/include/LinReg.h
 4a23b30d1f900c3d472468bebe2ebf3d *inst/include/LinReg_LA.h
@@ -25,7 +25,7 @@ d5bb566ace4f5f282d6ce97568b347fd *inst/include/LinReg_LA_adapt.h
 c3a3ee121f161b3d88346129bdf4a51d *inst/include/RcppSMC.h
 2a7dd9a9adfa87d1945c57f044e8a872 *inst/include/adaptMethods.h
 ac7f6bba3b9c153f755c4ed7a713c4f5 *inst/include/blockpfgaussianopt.h
-0db5c7e7c644987e7faa79ca0e2c87d0 *inst/include/conditionalSampler.h
+2201a3f96d8f800e34fbf5beb1dfb858 *inst/include/conditionalSampler.h
 1fbae20d638d48879076dddb8ca2c716 *inst/include/history.h
 6b9dabc97265531f550bbb8f70e05a6a *inst/include/moveset.h
 1832f67bd5dbb5a19ddabbbcda8220d1 *inst/include/nonLinPMMH.h
