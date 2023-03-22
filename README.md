@@ -1,6 +1,5 @@
 ## RcppSMC: Rcpp Bindings for Sequential Monte Carlo
 
-[![Build Status](https://travis-ci.org/rcppsmc/rcppsmc.svg)](https://travis-ci.org/github/rcppsmc/rcppsmc)
 [![CI](https://github.com/rcppsmc/rcppsmc/workflows/ci/badge.svg)](https://github.com/rcppsmc/rcppsmc/actions?query=workflow%3Aci)
 [![License](https://img.shields.io/badge/license-GPL%20%28%3E=%202%29-brightgreen.svg?style=flat)](https://www.gnu.org/licenses/gpl-2.0.html)
 [![CRAN](https://www.r-pkg.org/badges/version/RcppSMC)](https://cran.r-project.org/package=RcppSMC)
@@ -11,7 +10,8 @@
 
 This package provides R with access to the
 [Sequential Monte Carlo Template Classes](https://doi.org/10.18637/jss.v030.i06)
-by Johansen (Journal of Statistical Software, 2009, v30, i6).
+by Johansen (Journal of Statistical Software, 2009, v30, i6,
+[doi:10.18637/jss.v030.i06](https://doi.org/10.18637/jss.v030.i06)).
 
 At present, four additional examples have been added, and the first example
 from the JSS paper has been extended. Further integration and extensions are
