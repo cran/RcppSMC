@@ -1,5 +1,5 @@
-ea73c699ce1cf83b1a825ed0ea672d42 *ChangeLog
-d354bc2e6fada285f0a8310e9a937e9b *DESCRIPTION
+e7753298a418b903fb43295273b30cc1 *ChangeLog
+ac663ca015c87843835b2dea0e5a7e56 *DESCRIPTION
 182db1721146e71f85516d2466121942 *NAMESPACE
 39c4646ee6f84bc72cf36426ce9d8294 *R/LinReg.R
 c5295fe59ef28d7213c63627322defbb *R/LinRegLA.R
@@ -18,10 +18,10 @@ cf137f03a8c427c44989857b1eade5d2 *R/simGaussianSSM.R
 72032e6a6536d9497b6c1b54094d91f6 *R/simNonlin.R
 7929db7215448da18153fdcfdbf564b1 *README.md
 7747194046c887b027e0cb501c82577a *TODO
-7f2094c7b4d5faa522b624cffc621f8b *build/partial.rdb
+b52aabe9a2757fc86742763db9dafc9b *build/partial.rdb
 20b0e1e3c02dbe8dce049d2e4ef46b33 *cleanup
-0e03e1595ad4a7c9b4ee9ed9a023ebfa *data/radiata.rda
-ce54631b75963d8991684dc9b6fe2798 *inst/NEWS.Rd
+8905f1cfd6637ab0a6c9db8db89338fb *data/radiata.rda
+07d72bee2323481f8d8e2911cb449e3d *inst/NEWS.Rd
 1bf2e25ca70e29c33f9bfd39ee89b898 *inst/announce/RcppSMC-0.1.0.txt
 b0fe3ce0fb3d4623fe8b8db306f10850 *inst/include/LinReg.h
 4a23b30d1f900c3d472468bebe2ebf3d *inst/include/LinReg_LA.h
@@ -48,7 +48,7 @@ d83a1a14074a9e81f412d732c8b59657 *inst/skeleton/rcppsmc_hello_world.cpp
 b23551d502bd74986b91b2c12daaf140 *man/LinReg.Rd
 4d4bd06bd988f14796a1ea72b39d0189 *man/RcppSMCpackageSkeleton.Rd
 c3d6ae154153000e6c28127a47f28334 *man/blockpfGaussianOpt.Rd
-b4e6498d7ab0c76c24aa6ee2975fb11f *man/cSMCexamples.Rd
+a45ca350d8d51986c8c37378c2370a83 *man/cSMCexamples.Rd
 5db20ff71aa668b0356440e845f8f45e *man/nonLinPMMH.Rd
 9290d3fc281cbe3af1b4a21befd84ab6 *man/pfLineartBS.Rd
 601657df261407e4d42eaa104d09be39 *man/pfNonlinBS.Rd
